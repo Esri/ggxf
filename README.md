@@ -1,2 +1,1 @@
-# GGXF 
-(Gridded Geodetic data eXchange Format)
+# GGXF (Gridded Geodetic data eXchange Format)
