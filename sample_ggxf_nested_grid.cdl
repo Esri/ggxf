@@ -1,0 +1,200 @@
+netcdf a_sample_ggxf_nested_grid {
+// global attributes of the dataset
+        :ggxf_version = "0" ;
+        :dataset_date_time = "13-01-03" ;
+        :dataset_begin_date = "13-01-03" ;
+        :dataset_end_date = "NONE" ;
+        :dataset_epoch = "2013.163" ;
+        :number_of_variables = "2" ;	
+        :north_south_node_sequence = " " ;//[string]|Keyword{south_to_north, north_to_south}
+        :east_west_node_sequence = " " ;	//[string]|Keyword{east_to_west, west_to_east}
+        :temporality_of_grid = "0";		//[bool]|{0 = static; 1 = time-varying}
+        :geometric_reference_frame_of_source_wkid = "N/A" ;	// [int]|Optional
+        :geometric_reference_frame_of_target_wkid = "N/A" ;	// [int]|optional
+        :vertical_reference_frame_of_target_wkid = "N/A" ;	// [int]|Optional
+        :geometric_reference_frame_of_interpolation_wkid = "N/A" ; //[int]|Optional
+        :tidal_system = "N/A" ;	//[string]|Keyword{mean_tide, zero_tide, non-tidal}|Optional
+
+// global attributes for data discovery
+        :Conventions = "CF-1.0";                                 // do not change
+        :Metadata_Conventions = "Unidata Dataset Discovery v1.0";// do not change
+        // these describe the data creation, name the creator(s), and support online discovery.
+        // see http://www.unidata.ucar.edu/software/netcdf-java/formats/DataDiscoveryAttConvention.html
+        // fill in and revise values as needed for your data.
+        //See https://www.unavco.org/software/visualization/idv/IDV_for_GEON_netcdf.html
+        :title = "Transformation from Germany geodetic datum RD-83 to ETRS89" ;
+        :summary = "Transformation is given in the form of latitude and longitude shifts in seconds." ;
+        :keywords = "Germany, transformation, RD-83, ETRS89" ;
+        :creator_name = "Esri" ;
+        :creator_url = "http://www.esri.com" ;
+        :creator_email = "kevin_kelly@esri.com" ;
+        :institution = "BKG" ;
+        :acknowledgment="BKG" ;
+        :references = "BKG" ;
+        :history = "Version 1 " ;
+        :comment = "Created by K.M. Kelly from ntv2 file" ;
+        :geospatial_lat_min = "49.8" ;
+        :geospatial_lat_max = "54.7" ;
+        :geospatial_lat_units = "degrees_north" ;
+        :geospatial_lat_resolution = "variable" ;
+        :geospatial_lon_min = "-15.66666666666667" ;
+        :geospatial_lon_max = "-9.833333333333334" ;
+        :geospatial_lon_units = "degrees_east" ;
+        :geospatial_lon_resolution = "variable" ;
+        :east_west_node_sequence = "west_to_east" ;
+        :geospatial_vertical_min = "N/A" ;
+        :geospatial_vertical_max = "N/A" ;
+        :geospatial_vertical_units = "N/A" ;
+        :geospatial_vertical_resolution = "N/A" ;
+        :geospatial_vertical_positive = "N/A" ;
+        :time_coverage_start = "N/A" ;
+        :time_coverage_end = "N/A" ;
+        :time_coverage_resolution = "N/A" ;
+
+	group: GERMANY {
+	  dimensions:
+		number_of_records = 7029 ;
+	  variables:
+		float lat_shift(number_of_records) ;
+			lat_shift:unit = "seconds" ;
+			lat_shift:long_name = "Latitude shift, positive north" ;	
+			
+		float lon_shift(number_of_records) ;
+			lon_shift:unit = "seconds" ;
+			lon_shift:long_name = "Longitude shift, positive east" ;	
+	//group variables
+		:parent_grid_name = "NONE" ;
+		:number_of_subgrids = "3" ;
+	        :minimum_latitude = "49.8" ;
+		:maximum_latitude = "54.7" ;
+		:left_longitude = "-15.66666666666667" ;
+		:right_longitude = "-9.833333333333334" ;
+		:north_south_node_interval = "0.05" ;
+		:east_west_node_interval = "0.08333333333333333" ;
+		:north_south_node_sequence = "south_to_north" ;
+        	:east_west_node_sequence = "west_to_east" ;	
+		:array_node_order_arrangement_method = "row_major" ;
+	        :number_of_rows = "99" ;
+	        :number_of_columns = "71" ;
+	        :recommended_interpolation_method = "bilinear" ;
+	        :dataset_date_time = "13-01-03" ;
+	        :dataset_begin_date = "13-01-03" ;
+	        :dataset_end_date = "NONE" ;
+	        :dataset_epoch = "2013.163" ;
+
+	  data:
+	  
+	   lat_shift = -3.84259295, -3.84578991, -3.84897590, ...
+	   lon_shift = 7.31549883, 7.27099609, 7.22645617, ...
+
+	  group: SN_NW {
+	    dimensions:
+		number_of_records = 651866 ;
+	    variables:
+		float lat_shift(number_of_records) ;
+			lat_shift:unit = "seconds" ;
+			
+		float lon_shift(number_of_records) ;
+			lon_shift:unit = "seconds" ;
+	//group variables
+		:parent_grid_name = "GERMANY" ;
+		:number_of_subgrids = "0" ;
+	        :minimum_latitude = "50.85" ;
+		:maximum_latitude = "51.7" ;
+		:left_longitude = "12.08333333333333" ;
+		:right_longitude = "13.5" ;
+		:north_south_node_interval = "0.001666666666666667" ;
+		:east_west_node_interval = "0.08333333333333333" ;
+		:north_south_node_sequence = "south_to_north" ;
+        	:east_west_node_sequence = "west_to_east" ;
+		:array_node_order_arrangement_method = "row_major" ;
+	        :number_of_rows = "766" ;
+	        :number_of_columns = "851" ;
+	        :recommended_interpolation_method = "bilinear" ;
+	        :dataset_date_time = "13-01-03" ;
+	        :dataset_begin_date = "13-01-03" ;
+	        :dataset_end_date = "NONE" ;
+	        :dataset_epoch = "2013.163" ;
+
+	  data:
+	  
+	   lat_shift = -4.36161184, -4.36168098, -4.36173820, ...
+	   lon_shift = 6.21984577, 6.21897793, 6.21806383, ...
+
+	  } //end group SN_NW
+
+	  group: SN_O {
+	    dimensions:
+		number_of_records = 899646 ;
+	    variables:
+		float lat_shift(number_of_records) ;
+			lat_shift:unit = "seconds" ;
+			
+		float lon_shift(number_of_records) ;
+			lon_shift:unit = "seconds" ;
+	//group variables
+		:parent_grid_name = "GERMANY" ;
+		:number_of_subgrids = "0" ;
+	        :minimum_latitude = "50.6" ;
+		:maximum_latitude = "51.65" ;
+		:left_longitude = "13.5" ;
+		:right_longitude = "15.08333333333333" ;
+		:north_south_node_interval = "0.001111111111111111" ;
+		:east_west_node_interval = "0.001666666666666667" ;
+		:north_south_node_sequence = "south_to_north" ;
+        	:east_west_node_sequence = "west_to_east" ;
+        	:array_node_order_arrangement_method = "row_major" ;
+	        :number_of_rows = "946" ;
+	        :number_of_columns = "951" ;
+	        :recommended_interpolation_method = "bilinear" ;
+	        :dataset_date_time = "13-01-03" ;
+	        :dataset_begin_date = "13-01-03" ;
+	        :dataset_end_date = "NONE" ;
+	        :dataset_epoch = "2013.163" ;
+
+	  data:
+	  
+	   lat_shift = -4.20415211, -4.20421314, -4.20427084, ...
+	   lon_shift = 7.07402897, 7.07312202, 7.07221413, ...
+
+	  } //end group SN_O
+  
+	  group: SN_SW {
+	    dimensions:
+		number_of_records = 631631 ;
+	    variables:
+		float lat_shift(number_of_records) ;
+			lat_shift:unit = "seconds" ;
+			
+		float lon_shift(number_of_records) ;
+			lon_shift:unit = "seconds" ;
+	//group variables
+		:parent_grid_name = "GERMANY" ;
+		:number_of_subgrids = "0" ;
+	        :minimum_latitude = "50.15" ;
+		:maximum_latitude = "50.85" ;
+		:left_longitude = "11.83333333333333" ;
+		:right_longitude = "13.5" ;
+		:north_south_node_interval = "0.001111111111111111" ;
+		:east_west_node_interval = "0.001666666666666667" ;
+		:north_south_node_sequence = "south_to_north" ;
+        	:east_west_node_sequence = "west_to_east" ;		
+		:array_node_order_arrangement_method = "row_major" ;
+	        :number_of_rows = "631" ;
+	        :number_of_columns = "1001" ;
+	        :recommended_interpolation_method = "bilinear" ;
+	        :dataset_date_time = "13-01-03" ;
+	        :dataset_begin_date = "13-01-03" ;
+	        :dataset_end_date = "NONE" ;
+	        :dataset_epoch = "2013.163" ;
+
+	  data:
+	  
+	    lat_shift = -4.06448984, -4.06453705, -4.06458712, ...
+	    lon_shift = 6.17937803, 6.17847490, 6.17757511, ...
+
+	  } //end group SN_SW
+  
+       } //end group GERMANY
+ 
+} //end a_sample_ggxf_nested_grid
