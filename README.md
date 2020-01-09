@@ -9,3 +9,15 @@ GGXF is an Esri research and development project to define a standardized format
 - Binary data storage structure
 - Open-source GGXF reader/writers from commonly used existing formats
 
+We quickly realized 
+
+
+GGXF a formidable task? Why create yet another format?
+NetCDF/HDF5 mature, widely used, robust, OGC Standard
+ Can we adapt NetCDF/HDF5 to GGXF? Let’s try it!
+Based on the Common Data Form Language File (CDL) standards:
+Created a set of variables (standard names) relevant to GGXF
+These defined a self-describing CDL header
+Used NetCDF library to convert a multi-resolution, nested NTv2 grid file into CDL file and into binary NetCDF format
+Successfully recovered CDL from binary NetCDF file
+“Warm and fuzzy” that NetCDF could possibly serve as a platform for GGXF
