@@ -9,7 +9,7 @@ GGXF is an Esri research and development project to define a standardized format
 - Binary data storage structure
 - Open-source GGXF reader/writers from commonly used existing formats
 
-We quickly realized 
+We quickly realized the formidible scope of the task. We also questioned the veracity of creating yet another standard format. After a fairly cursory review of existing data 
 
 
 GGXF a formidable task? Why create yet another format?
