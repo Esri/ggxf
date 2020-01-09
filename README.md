@@ -9,15 +9,6 @@ GGXF is an Esri research and development project to define a standardized format
 - Binary data storage structure
 - Open-source GGXF reader/writers from commonly used existing formats
 
-We quickly realized the formidible scope of the task. We also questioned the veracity of creating yet another standard format. After a fairly cursory review of existing data 
+We quickly realized the formidible scope of this task. We also questioned the rationale of creating yet another standard format. After a fairly cursory review of existing geodetic data grid formats coupled with the fact that Esri already had capability to work with NetCDF/HDF5, we focused on leveraging this widely used, robust and mature format for our GGXF. The fact that NetCDF was already an OGC standard bolstered our decision to proceed in this direction.
 
-
-GGXF a formidable task? Why create yet another format?
-NetCDF/HDF5 mature, widely used, robust, OGC Standard
- Can we adapt NetCDF/HDF5 to GGXF? Let’s try it!
-Based on the Common Data Form Language File (CDL) standards:
-Created a set of variables (standard names) relevant to GGXF
-These defined a self-describing CDL header
-Used NetCDF library to convert a multi-resolution, nested NTv2 grid file into CDL file and into binary NetCDF format
-Successfully recovered CDL from binary NetCDF file
-“Warm and fuzzy” that NetCDF could possibly serve as a platform for GGXF
+Having made the decision to adapt NetCDF/HDF5, we created a set of variables (standard names) relevant to GGXF based on the Common Data Form Language File (CDL) standard. These would define the self-describing metadata/header file needed to ensure the format was self-describing. Using our defined standard names we created a CDL file of a multi-resolution, nested NTv2 grid file and applied the ncgen function from the NetCDF library to convert the CDL file into binary NetCDF format. We successfully recovered the original CDL from the binary NetCDF file using the ncdump function. This process gave us confidence that NetCDF could possibly serve as a platform for GGXF.
