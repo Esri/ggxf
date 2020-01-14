@@ -17,7 +17,11 @@ Using these parameters we can create a [Common Data Form Language File](https://
 
 A more complete bacground of the development of GGXF and examples of GGXF format grids can be found in the files uploaded above. The table below describes the content of each of these files.
 
-| File                                        | Description                                                                              |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Header                                      | Title                                                                                    |
-| Paragraph                                   | Text                                                                                     |
+| File                                               | Description                                                                                                                                                                                            |
+|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 6.OGC standarization of gridded geodetic data.pptx | Lott, R.M., M. Kennedy, K.M. Kelly, R. Juergens, D. Burrows and K. Ryden, 2015,  Standard file format for the exchange of gridded geodetic data,  OGC TC/PC Meeting, Barcelona, Spain, 9-13 March 2015 |
+|                                                    |                                                                                                                                                                                                        |
+|                                                    |                                                                                                                                                                                                        |
+|                                                    |                                                                                                                                                                                                        |
+|                                                    |                                                                                                                                                                                                        |
+|                                                    |                                                                                                                                                                                                        |
