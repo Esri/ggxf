@@ -29,5 +29,9 @@ A more complete background of the development of GGXF and examples of GGXF forma
 | GGXF-OGC-Toulouse-18-Nov-2019.pptx                      | Kelly, K.M. and R.M. Lott, 2019, Standard file format for the exchange of gridded geodetic data, OGC TC/PC Meeting, Toulouse, France, 12-18 November, 2019                                                                                                                                              |
 | IAGS-S-15-00075.pdf                                     | Kelly, K.M., R. Juergens, M. Kennedy, D. Burrows and R. Lott, 2015, A Standard File Format For Gridded Geodetic Data, Unpublished paper submitted to IAG Proceedings, 6th General Assembly of the International Union of Geodesy and Geophysics (IUGG), June 22 to July 2, 2015, Prague, Czech Republic |
 | sample_ggxf_nested_grid.cdl                             | Excerpt of CDL file created from a multi-resolution, nested NTv2 grid file and used to generate a binary NetCDF file (see text for details).                                                                                                                                                          |
-## Development History
-GGXF is an Esri research and development project to define a standardized format for the exchange 
+## Future Work
+* Continue to vet GGXF throughout the community
+* Develop a more comprehensive list of metadata/header standard attriute and variable names and their definitions
+* Incorporate GGXF into the Esri Projection Engine (PE)
+* Develop code samples to read/write GGXF files
+* Develop code sample to convert between GGXF and selected commonly used existing formats
