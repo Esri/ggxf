@@ -34,4 +34,4 @@ A more complete background of the development of GGXF and examples of GGXF forma
 * Develop a more comprehensive list of metadata/header standard attriute and variable names and their definitions
 * Incorporate GGXF into the Esri Projection Engine (PE)
 * Develop code samples to read/write GGXF files
-* Develop code sample to convert between GGXF and selected commonly used existing formats
+* Develop code samples to convert between GGXF and some commonly used existing formats
