@@ -1,5 +1,8 @@
 # GGXF (Gridded Geodetic data eXchange Format)
 
+## Motivation
+The use of gridded data in geodetic applications is increasing. For some geodetic datum transformations the Natural Resources Canada NTv2 format is widely used although other national and ad hoc formats are also in use. There is no global standard for these and other geodetic data such as geoid grids, position displacement grids and numerous others. Producers often define a proprietary or some other convenient format. The adoption of a standard file format will facilitate the creation and use of gridded data sets. It would relieve grid producers of the necessity for producing file readers and will assist application developers to incorporate new grids with minimal effort. Users will benefit from quicker access to the data. This paper describes the business case for and technical requirements of an international standard for a geodetic data grid exchange format (GGXF). It outlines a proposal for producing an international standard. 
+
 ## Development History
 GGXF is an Esri research and development project to define a standardized format for the exchange of gridded geodetic data. The project began in 2013 and has progressed in fits and starts since then. The requirements of GGXF are that it should psooses the following properties:
 
@@ -26,3 +29,5 @@ A more complete background of the development of GGXF and examples of GGXF forma
 | GGXF-OGC-Toulouse-18-Nov-2019.pptx                      | Kelly, K.M. and R.M. Lott, 2019, Standard file format for the exchange of gridded geodetic data, OGC TC/PC Meeting, Toulouse, France, 12-18 November, 2019                                                                                                                                              |
 | IAGS-S-15-00075.pdf                                     | Kelly, K.M., R. Juergens, M. Kennedy, D. Burrows and R. Lott, 2015, A Standard File Format For Gridded Geodetic Data, Unpublished paper submitted to IAG Proceedings, 6th General Assembly of the International Union of Geodesy and Geophysics (IUGG), June 22 to July 2, 2015, Prague, Czech Republic |
 | sample_ggxf_nested_grid.cdl                             | Excerpt of CDL file created from a multi-resolution, nested NTv2 grid file and used to generate a binary NetCDF file (see text for details).                                                                                                                                                          |
+## Development History
+GGXF is an Esri research and development project to define a standardized format for the exchange 
