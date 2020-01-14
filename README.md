@@ -17,3 +17,7 @@ Using these parameters we can create a [Common Data Form Language File](https://
 
 A more complete bacground of the development of GGXF and examples of GGXF format grids can be found in the files uploaded above. The table below describes the content of each of these files.
 
+| File                                        | Description                                                                              |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Header                                      | Title                                                                                    |
+| Paragraph                                   | Text                                                                                     |
