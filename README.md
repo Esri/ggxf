@@ -1,5 +1,6 @@
 # GGXF (Gridded Geodetic data eXchange Format)
 
+## Development History
 GGXF is an Esri research and development project to define a standardized format for the exchange of gridded geodetic data. The project began in 2013 and has progressed in fits and starts since then. The requirements of GGXF are that it should psooses the following properties:
 
 - Multi-dimensional
@@ -15,7 +16,7 @@ Having decided to adapt [NetCDF/HDF5](https://www.unidata.ucar.edu/software/netc
 
 Using these parameters we can create a [Common Data Form Language File](https://www.unidata.ucar.edu/software/netcdf/workshops/most-recent/nc3model/Cdl.html) (CDL) which is a human-readable notation for NetCDF objects and data. We tested this by creating a CDL file of a multi-resolution, nested NTv2 grid file and applied the `ncgen` function from the NetCDF library to convert the CDL file into binary NetCDF format. We successfully recovered the original CDL from the binary NetCDF file using the `ncdump` function. This process gave us confidence that NetCDF could possibly serve as a platform for GGXF.
 
-A more complete bacground of the development of GGXF and examples of GGXF format grids can be found in the files uploaded above. The table below describes the content of each of these files.
+A more complete background of the development of GGXF and examples of GGXF format grids can be found in the files uploaded above. The table below describes the content of each of these files.
 
 | File                                                    | Description                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
